@@ -1,0 +1,5 @@
+#!/bin/sh
+sudo cryptsetup open --type luks /dev/sdb1 exthd
+sudo mkdir /mnt/exthd
+sudo mount /dev/mapper/exthd /mnt/exthd/
+
