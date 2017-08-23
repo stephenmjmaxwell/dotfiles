@@ -1,0 +1,1 @@
+alias mg="emacs -nw"

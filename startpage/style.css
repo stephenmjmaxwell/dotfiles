@@ -8,7 +8,7 @@ ul {
 }
 
 body {
-  background: #0B0C0C;
+  background: #030414;
   height: 100%;
   width: 100%;
 }
@@ -24,7 +24,7 @@ main {
 }
 
 h1 {
-  color: #5B6454;
+  color: #9C9770;
   display: block;
   margin: 0 auto;
   text-align: left;
@@ -44,7 +44,7 @@ ul {
 }
 
 li {
-  color: #AA9064;
+  color: #D3CAAA;
   display: inline-block;
   font-size: 0.8em;
   line-height: 1.0;
@@ -53,11 +53,11 @@ li {
 }
 
 a {
-  color: #9B734A;
+  color: #97A79D;
   text-decoration: none;
   transition: .2s;
 }
 
 a:hover {
-  color: #6c6d6d;
+  color: #676872;
 }
