@@ -8,14 +8,14 @@ ul {
 }
 
 body {
-  background: #030414;
+  background: #0B0C0C;
   height: 100%;
   width: 100%;
 }
 
 main {
   display: block;
-  font-family: monospace;
+  font-family: Iosevka;
   left: 50%;
   position: absolute;
   top: 45%;
@@ -24,7 +24,7 @@ main {
 }
 
 h1 {
-  color: #9C9770;
+  color: #5B6454;
   display: block;
   margin: 0 auto;
   text-align: left;
@@ -44,20 +44,20 @@ ul {
 }
 
 li {
-  color: #D3CAAA;
+  color: #AA9064;
   display: inline-block;
-  font-size: 0.8em;
+  font-size: 1em;
   line-height: 1.0;
   list-style: none;
   margin: 5px;
 }
 
 a {
-  color: #97A79D;
+  color: #9B734A;
   text-decoration: none;
   transition: .2s;
 }
 
 a:hover {
-  color: #676872;
+  color: #6c6d6d;
 }

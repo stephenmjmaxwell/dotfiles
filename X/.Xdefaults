@@ -1,7 +1,7 @@
 URxvt.scrollBar: false
 URxvt.urgentOnBell: off
 URxvt.visualBell: off
-URxvt.font:xft:artwiz lemon-8
-URxvt.boldFont:xft:artwiz lemon-8
-URxvt.italicfont:xft:artwiz lemon-8
-URxvt.bolditalicFont:xft:artwiz lemon-8
+URxvt.font:xft:Iosevka-13
+URxvt.boldFont:xft:Iosevka-13
+URxvt.italicfont:xft:Iosevka-13
+URxvt.bolditalicFont:xft:Iosevka-13

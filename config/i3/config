@@ -13,8 +13,11 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango: cure 10
-for_window [class=".*"] title_format "<span font='artwiz lemon 7'> %title</span>"
+font pango: Iosevka 12
+#for_window [class=".*"] title_format "<span font='artwiz lemon 7'> %title</span>"
+
+for_window [class="^.*"] border pixel 1
+new_window 1pixel
 
 # Set colors from Xresources
 # Change 'color7' and 'color2' to whatever colors you want i3 to use 
@@ -63,8 +66,8 @@ bindsym $mod+Shift+s exec i3lock-fancy
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # use rofi instead of dmenu
-bindsym $mod+d exec --no-startup-id rofi -show run -font "${font:-Artwiz Lemon 7}" 
-bindsym $mod+Tab exec --no-startup-id rofi -show window -font "${font:-Artwiz Lemon 7}" 
+bindsym $mod+d exec --no-startup-id rofi -show run -font "${font:-Iosevka 12}" 
+bindsym $mod+Tab exec --no-startup-id rofi -show window -font "${font:-Iosevka 12}" 
 
 # Volume
 #set $sink `pactl list short sinks | grep RUNNING | cut -f1`
