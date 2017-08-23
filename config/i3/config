@@ -193,6 +193,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 bindsym $mod+Shift+w exec "qutebrowser --backend webengine"
+bindsym $mod+Shift+x exec "emacs"
 
 bindsym $mod+c exec "wal -i ${HOME}/Main/Wallpapers -o wal-set"
 
