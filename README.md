@@ -11,5 +11,6 @@
 - Web Browser: `qutebrowser`
 - Window Manager: `i3`
 - Backup: `borg`
-- PDF reader: `apvlv`
+- PDF reader: `mupdf`
 - IRC: `irssi`
+- RSS: `elfeed-org`
