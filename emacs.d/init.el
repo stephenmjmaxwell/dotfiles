@@ -9,12 +9,13 @@
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
                          ("melpa" . "https://melpa.org/packages/")))
 
+(pdf-tools-install)
 
 (add-to-list 'default-frame-alist '(font . "Iosevka-13" ))
 (set-face-attribute 'default t :font "Iosevka-13" )
 
 ;;; Disable useless GUI stuff
-;;(tool-bar-mode -1)
+(tool-bar-mode -1)
 (scroll-bar-mode -1)
 ;;(menu-bar-mode -1)
 (blink-cursor-mode -1)
@@ -29,7 +30,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (elfeed-org ## org))))
+ '(package-selected-packages (quote (pdf-tools magit elfeed-org ## org))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -51,3 +52,14 @@
 (setq version-control t)
 (setq vc-make-backup-files t)
 (setq auto-save-file-name-transforms '((".*" "~/.emacs.d/auto-save-list/" t)))
+
+;; history
+(setq savehist-file "~/.emacs.d/savehist")
+(savehist-mode 1)
+(setq history-length t)
+(setq history-delete-duplicates t)
+(setq savehist-save-minibuffer-history 1)
+(setq savehist-additional-variables
+      '(kill-ring
+	search-ring
+	        regexp-search-ring))
