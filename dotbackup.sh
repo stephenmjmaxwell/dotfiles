@@ -10,3 +10,4 @@ cp ~/.emacs.d/init.el ~/dotfiles/emacs.d/
 cp ~/.tmux.conf ~/dotfiles/
 cp ~/.config/fish/config.fish ~/dotfiles/config/fish/
 cp ~/bin/* ~/dotfiles/bin/
+cp ~/.emacs.d/elfeed.org ~/Main/Doc/personal/feed/
