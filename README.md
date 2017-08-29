@@ -9,6 +9,7 @@
 - Text Editor: `emacs`
     - RSS: `elfeed-org`
     - PDF reader: `pdf-tools`
+    - File manager: `dired`
 - Video Player: `mpv`
 - Web Browser: `qutebrowser`
 - Window Manager: `i3`

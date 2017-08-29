@@ -1,7 +1,8 @@
 URxvt.scrollBar: false
 URxvt.urgentOnBell: off
 URxvt.visualBell: off
-URxvt.font:xft:Iosevka-13
-URxvt.boldFont:xft:Iosevka-13
-URxvt.italicfont:xft:Iosevka-13
-URxvt.bolditalicFont:xft:Iosevka-13
+URxvt.font:xft:Mononoki-11.5
+URxvt.boldFont:xft:Mononoki-11.5
+URxvt.italicfont:xft:Mononoki-11.5
+URxvt.bolditalicFont:xft:Mononoki-11.5
+URxvt.letterSpace: -1
