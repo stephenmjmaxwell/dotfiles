@@ -1,7 +1,7 @@
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
-;; You may delete these explanatory comments.
+;; You may delete these explanatory co mments.
 (package-initialize)
 (require 'package)
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
@@ -28,10 +28,13 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
-
+ '(custom-enabled-themes (quote (plan9)))
+ '(custom-safe-themes
+   (quote
+    ("2cf7f9d1d8e4d735ba53facdc3c6f3271086b6906c4165b12e4fd8e3865469a6" default)))
  '(package-selected-packages
    (quote
-    (dashboard diff-hl pdf-tools magit elfeed-org ## org))))
+    (plan9-theme dashboard diff-hl pdf-tools magit elfeed-org ## org))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

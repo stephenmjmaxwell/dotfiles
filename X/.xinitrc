@@ -4,6 +4,6 @@ xset -b
 pulseaudio &
 unclutter &
 dunst &
-wal -i "$(< "${HOME}/.cache/wal/wal")"
+#wal -i "$(< "${HOME}/.cache/wal/wal")"
 exec "${wm:-i3}"
 export BROWSER="qutebrowser --backend webengine"
