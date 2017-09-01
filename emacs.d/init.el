@@ -1,7 +1,5 @@
-;; Added by Package.el.  This must come before configurations of
-;; installed packages.  Don't delete this line.  If you don't want it,
-;; just comment it out by adding a semicolon to the start of the line.
-;; You may delete these explanatory co mments.
+
+
 (package-initialize)
 (require 'package)
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
@@ -12,6 +10,8 @@
 (elfeed-org)
 (require 'dashboard)
 (dashboard-setup-startup-hook)
+(require 'moe-theme)
+(moe-light)
 
 ;; set font
 (add-to-list 'default-frame-alist '(font . "Mononoki" ))
@@ -22,25 +22,6 @@
 (scroll-bar-mode -1)
 (menu-bar-mode 1)
 (blink-cursor-mode -1)
-
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-enabled-themes (quote (plan9)))
- '(custom-safe-themes
-   (quote
-    ("2cf7f9d1d8e4d735ba53facdc3c6f3271086b6906c4165b12e4fd8e3865469a6" default)))
- '(package-selected-packages
-   (quote
-    (plan9-theme dashboard diff-hl pdf-tools magit elfeed-org ## org))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
 
 ;; backups
 (setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
@@ -67,9 +48,6 @@
 (global-set-key (kbd "C-x g") 'magit-status)
 
 ;; Org
-(add-hook 'org-mode-hook
-          (lambda ()
-            (org-bullets-mode t)))
 (setq org-src-fontify-natively t)
 (setq org-src-window-setup 'current-window)
 
@@ -83,3 +61,22 @@
 (setq org-archive-location "~/Main/Doc/archive.org")
 
 (setq org-ellipsis "⤵")
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ansi-color-names-vector
+   ["#d2ceda" "#f2241f" "#67b11d" "#b1951d" "#3a81c3" "#a31db1" "#21b8c7" "#655370"])
+ '(custom-safe-themes
+   (quote
+    ("6952b5d43bbd4f1c6727ff61bc9bf5677d385e101433b78ada9c3f0e3787af06" "fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" default)))
+ '(package-selected-packages
+   (quote
+    (password-store powerline ## spaceline spacemacs-theme pdf-tools moe-theme magit elfeed-org diff-hl dashboard))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
