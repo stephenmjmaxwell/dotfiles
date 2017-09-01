@@ -1,11 +1,10 @@
-URxvt.scrollBar: false
-URxvt.urgentOnBell: off
-URxvt.visualBell: off
-URxvt.font:xft:Mononoki-11.5
-URxvt.boldFont:xft:Mononoki-11.5
-URxvt.italicfont:xft:Mononoki-11.5
-URxvt.bolditalicFont:xft:Mononoki-11.5
-URxvt.letterSpace: -1
+
+XTerm.vt100.faceName:Mononoki:size=11.5
+XTerm.termName: xterm-256color
+XTerm.vt100.metaSendsEscape: true
+XTerm.vt100.backarrowKey: false
+XTerm.ttyModes: erase ^?
+xterm*borderWidth: 0
 
 
 
