@@ -7,7 +7,7 @@ bind l exec slock
 
 exec /usr/bin/rpws init 3 -k
 bind C-1 exec rpws 1
-bind C-2 exlock xec rpws 2
+bind C-2 exec rpws 2
 bind C-3 exec rpws 3
 
 set border 0

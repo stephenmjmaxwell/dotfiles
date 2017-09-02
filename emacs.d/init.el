@@ -3,7 +3,7 @@
 (package-initialize)
 (require 'package)
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
-                         ("melpa" . "https://melpa.org/packages/")))
+                         ("melpa" . "https://melpa.org/packaXges/")))
 
 (pdf-tools-install)
 (require 'elfeed-org)
@@ -61,6 +61,7 @@
 (setq org-archive-location "~/Main/Doc/archive.org")
 
 (setq org-ellipsis "⤵")
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
