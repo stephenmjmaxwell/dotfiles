@@ -6,9 +6,6 @@ bind x exec emacs
 bind l exec slock
 
 exec /usr/bin/rpws init 3 -k
-bind C-1 exec rpws 1
-bind C-2 exec rpws 2
-bind C-3 exec rpws 3
 
 set border 0
 set padding 0 0 0 0
@@ -16,6 +13,5 @@ set padding 0 0 0 0
 definekey top XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% && ratpoison -c "echo RaiseVolume +5"
 definekey top XF86AudioLowerVolume exec pactl set-sink-volume 0 -5% && ratpoison -c "echo LowerVolume -5"
 definekey top XF86AudioMute exec pactl set-sink-mute 0 toggle && ratpoison -c "echo [ MUTE ]"
-
 definekey top XF86MonBrightnessUp exec xbacklight -inc 20
 definekey top XF86MonBrightnessDown exec xbacklight -dec 20 
