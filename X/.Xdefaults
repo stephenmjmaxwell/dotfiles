@@ -1,4 +1,4 @@
-XTerm.vt100.faceName:Mononoki:size=11.5
+XTerm.vt100.faceName:Iosevka Term
 XTerm.termName: xterm-256color
 XTerm.vt100.metaSendsEscape: true
 XTerm.vt100.backarrowKey: false
