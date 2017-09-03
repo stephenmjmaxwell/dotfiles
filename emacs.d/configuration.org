@@ -1,6 +1,6 @@
 
 * Packages
-
+Add package sources
 #+BEGIN_SRC emacs-lisp
 
 (require 'package)
@@ -18,7 +18,7 @@
 #+END_SRC
 
 * Backups
-
+ Stop emacs cluttering directories with save files 
 #+BEGIN_SRC 
 
 (setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
@@ -44,6 +44,12 @@ refresh key combinations.
 (blink-cursor-mode -1)
 
 #+END_SRC
+
+** Mini buffer
+ Make it easier to answer questions.
+ #+BEGIN_SRC emacs-lisp
+ (fset 'yes-or-no-p 'y-or-n-p)
+ #+END_SRC 
 
 * History
 #+BEGIN_SRC emacs-lisp 
@@ -80,10 +86,6 @@ See ⤵ instead of ...
 (setq org-ellipsis "⤵")
 #+END_SRC
 
-Use syntax highlighting in source blocks when editing
-#+BEGIN_SRC emacs-lisp
-(setq org-src-fontify-natively t)
-#+END_SRC
 
 Quickly instert emacs lisp source block
 #+BEGIN_SRC emacs-lisp
@@ -91,14 +93,9 @@ Quickly instert emacs lisp source block
              '("el" "#+BEGIN_SRC emacs-lisp\n?\n#+END_SRC"))
 #+END_SRC
 
-#+BEGIN_SRC emacs-lisp
-
-#+END_SRC
-
 My org files are stored in =~/Main/Doc/org/=. Set location info and handy bindings
 
 #+BEGIN_SRC emacs-lisp 
-
 
 (setq org-src-window-setup 'current-window)
 (setq org-directory "~/Main/Doc/org/")
