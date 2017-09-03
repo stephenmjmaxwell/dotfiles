@@ -8,7 +8,8 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (pdf-tools password-store org-bullets moe-theme magit elfeed-org diff-hl dashboard))))
+    (pdf-tools password-store org-bullets moe-theme magit elfeed-org diff-hl dashboard)))
+ '(send-mail-function nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

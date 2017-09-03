@@ -10,3 +10,4 @@ cp ~/.emacs.d/configuration.org ~/dotfiles/emacs.d/
 cp ~/.emacs.d/elfeed.org ~/Main/Doc/personal/feed/
 cp ~/.config/qutebrowser/qutebrowser.conf ~/dotfiles/config/qutebrowser/
 cp -r ~/.password-store ~/Main/Mobile/
+cp ~/.authinfo.gpg ~/Main/Doc/personal/

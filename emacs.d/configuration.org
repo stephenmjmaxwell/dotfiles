@@ -129,7 +129,7 @@ Once a TODO is done move to =archive.org= (snippet from [[https://github.com/hrs
 (define-key org-mode-map (kbd "C-c C-x C-s") 'hrs/mark-done-and-archive)
 (setq org-log-done 'time)
 #+END_SRC
-* Email
+* gnus
 #+BEGIN_SRC emacs-lisp
 
 (require 'gnus)
@@ -138,5 +138,4 @@ Once a TODO is done move to =archive.org= (snippet from [[https://github.com/hrs
      (nnimap-server-port "993")
      (nnimap-stream ssl)
      (nnimap-address "imap.fastmail.com")))
-
 #+END_SRC
