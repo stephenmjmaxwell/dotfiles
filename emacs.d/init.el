@@ -1,9 +1,7 @@
-
-
 (package-initialize)
 (require 'package)
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
-                         ("melpa" . "https://melpa.org/packaXges/")))
+                         ("melpa" . "https://melpa.org/packages/")))
 
 (pdf-tools-install)
 (require 'elfeed-org)
@@ -49,18 +47,27 @@
 
 ;; Org
 (setq org-src-fontify-natively t)
+(require 'org-bullets)
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 (setq org-src-window-setup 'current-window)
-
 (setq org-directory "~/Main/Doc/org/")
-
 (define-key global-map "\C-cl" 'org-store-link)
 (define-key global-map "\C-ca" 'org-agenda)
 (setq org-log-done t)
-
-(setq org-inbox-file "~/Main/Doc/index.org")
-(setq org-archive-location "~/Main/Doc/archive.org")
-
+(setq org-archive-location "~/Main/Doc/org/archive.org")
 (setq org-ellipsis "⤵")
+(setq org-default-notes-file (concat org-directory "/index.org"))
+(define-key global-map "\C-cc" 'org-capture)
+(setq org-agenda-files '("~/Main/Doc/org"))
+
+(defun hrs/mark-done-and-archive ()
+  "Mark the state of an org-mode item as DONE and archive it."
+  (interactive)
+  (org-todo 'done)
+  (org-archive-subtree))
+
+(define-key org-mode-map (kbd "C-c C-x C-s") 'hrs/mark-done-and-archive)
+(setq org-log-done 'time)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -74,7 +81,7 @@
     ("6952b5d43bbd4f1c6727ff61bc9bf5677d385e101433b78ada9c3f0e3787af06" "fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" default)))
  '(package-selected-packages
    (quote
-    (password-store powerline ## spaceline spacemacs-theme pdf-tools moe-theme magit elfeed-org diff-hl dashboard))))
+    (org-bullets password-store powerline ## spaceline spacemacs-theme pdf-tools moe-theme magit elfeed-org diff-hl dashboard))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

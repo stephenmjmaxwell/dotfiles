@@ -14,4 +14,4 @@ definekey top XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% && ratpoison
 definekey top XF86AudioLowerVolume exec pactl set-sink-volume 0 -5% && ratpoison -c "echo LowerVolume -5"
 definekey top XF86AudioMute exec pactl set-sink-mute 0 toggle && ratpoison -c "echo [ MUTE ]"
 definekey top XF86MonBrightnessUp exec xbacklight -inc 20
-definekey top XF86MonBrightnessDown exec xbacklight -dec 20 
+definekey top XF86MonBrightnessDown exec xbacklight -dec 20

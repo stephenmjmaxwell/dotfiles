@@ -8,8 +8,8 @@ cp ~/.emacs.d/init.el ~/dotfiles/emacs.d/
 cp ~/.tmux.conf ~/dotfiles/
 cp ~/bin/* ~/dotfiles/bin/
 cp ~/.emacs.d/elfeed.org ~/Main/Doc/personal/feed/
-cp -r ~/.password-store ~/Main/Mobile/
 cp ~/.ratpoisonrc ~/dotfiles/
+cp -r ~/.password-store ~/Main/Mobile/
 
 #cp ~/.config/fish/config.fish ~/dotfiles/config/fish/
 #cp ~/.config/ranger/rc.conf ~/dotfiles/config/ranger/
