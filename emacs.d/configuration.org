@@ -138,4 +138,7 @@ Once a TODO is done move to =archive.org= (snippet from [[https://github.com/hrs
      (nnimap-server-port "993")
      (nnimap-stream ssl)
      (nnimap-address "imap.fastmail.com")))
+
+(require 'smtpmail) 
+(setq message-send-mail-function 'smtpmail-send-it)
 #+END_SRC

@@ -9,7 +9,8 @@
  '(package-selected-packages
    (quote
     (pdf-tools password-store org-bullets moe-theme magit elfeed-org diff-hl dashboard)))
- '(send-mail-function nil))
+ '(smtpmail-smtp-server "smtp.fastmail.com")
+ '(smtpmail-smtp-service 587))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
