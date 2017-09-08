@@ -1,7 +1,6 @@
 startup_message off
 banish
 
-bind q exec qutebrowser --backend webengine
 bind x exec emacs 
 bind l exec slock
 
