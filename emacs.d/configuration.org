@@ -136,16 +136,12 @@ Once a TODO is done move to =archive.org= (snippet from [[https://github.com/hrs
 * w3m
 w3m search engine use duckduckgo
 #+BEGIN_SRC emacs-lisp      
+(setq browse-url-browser-function 'w3m-browse-url)
+
  (eval-after-load "w3m"                                    
  '(progn                                                   
  (require 'w3m-search)                                     
  (setq w3m-search-default-engine "duckduckgo")             
  (add-to-list 'w3m-search-engine-alist                     
- '("duckduckgo" "http://www.duckduckgo.com/lite/?q=%s"))))  ;; w3m search engine change (using duckduckgo lite)       
- (eval-after-load "w3m"                                    
- '(progn                                                   
- (require 'w3m-search)                                     
- (setq w3m-search-default-engine "duckduckgo")             
- (add-to-list 'w3m-search-engine-alist                     
- '("duckduckgo" "http://www.duckduckgo.com/lite/?q=%s")))) 
+ '("duckduckgo" "http://www.duckduckgo.com/lite/?q=%s"))))       
 #+END_SRC
