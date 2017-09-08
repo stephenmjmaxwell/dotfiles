@@ -1,4 +1,5 @@
 * Who
+
 #+BEGIN_SRC emacs-lisp
     (setq user-mail-address	"stephen@stephenmaxwell.me"
 	  user-full-name	"Stephen Maxwell")
@@ -16,9 +17,6 @@ Add package sources
 (elfeed-org)
 (require 'dashboard)
 (dashboard-setup-startup-hook)
-(require 'moe-theme)
-(moe-light)
-
 #+END_SRC
 
 * Backups
@@ -46,7 +44,11 @@ refresh key combinations.
 (scroll-bar-mode -1)
 (menu-bar-mode 1)
 (blink-cursor-mode -1)
+#+END_SRC
 
+Select theme
+#+BEGIN_SRC emacs-lisp
+(load-theme 'doom-molokai t)
 #+END_SRC
 
 ** Mini buffer
@@ -79,18 +81,6 @@ refresh key combinations.
 #+END_SRC
 
 * Org-mode
-  Instead of asterisks see pretty bullets
-#+BEGIN_SRC emacs-lisp
-(require 'org-bullets)
-(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
-#+END_SRC
-
-See ⤵ instead of ...
-#+BEGIN_SRC emacs-lisp 
-(setq org-ellipsis "⤵")
-#+END_SRC
-
-
 Quickly instert emacs lisp source block
 #+BEGIN_SRC emacs-lisp
 (add-to-list 'org-structure-template-alist
@@ -129,6 +119,7 @@ Once a TODO is done move to =archive.org= (snippet from [[https://github.com/hrs
 (define-key org-mode-map (kbd "C-c C-x C-s") 'hrs/mark-done-and-archive)
 (setq org-log-done 'time)
 #+END_SRC
+
 * gnus
 #+BEGIN_SRC emacs-lisp
 
