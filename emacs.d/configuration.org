@@ -15,24 +15,20 @@ Add package sources
 (pdf-tools-install)
 (require 'elfeed-org)
 (elfeed-org)
-(require 'dashboard)
-(dashboard-setup-startup-hook)
+
 #+END_SRC
 
 * Backups
  Stop emacs cluttering directories with save files 
 #+BEGIN_SRC 
 
-(setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
-(setq delete-old-versions -1)
-(setq version-control t)
-(setq vc-make-backup-files t)
-(setq auto-save-file-name-transforms '((".*" "~/.emacs.d/auto-save-list/" t)))
+(setq make-backup-files nil) ; stop creating backup~ files
+(setq auto-save-default nil) ; stop creating #autosave# files
 
 #+END_SRC
 
 * GUI configuration
-Set font to Iosevka and turn off unused GUI elements. The menu bar can be handy to 
+ Set font to Iosevka and turn off unused GUI elements. The menu bar can be handy to 
 refresh key combinations. 
 
 #+BEGIN_SRC emacs-lisp 
@@ -48,7 +44,28 @@ refresh key combinations.
 
 Select theme
 #+BEGIN_SRC emacs-lisp
-(load-theme 'doom-molokai t)
+(load-theme 'gruvbox t)
+#+END_SRC
+
+#+BEGIN_SRC emacs-lisp
+;; Don't display initial messages
+(setq initial-scratch-message "")
+(setq initial-major-mode 'org-mode)
+(setq inhibit-startup-message t)
+#+END_SRC
+
+;Relative line number
+;#+BEGIN_SRC emacs-lisp
+;(require 'linum-relative)
+;(with-eval-after-load 'linum
+;  (linum-relative-toggle))
+;(global-linum-mode 1)
+;#+END_SRC
+
+Word wrap when writing 
+#+BEGIN_SRC emacs-lisp
+(setq-default word-wrap t)
+(toggle-truncate-lines -1)
 #+END_SRC
 
 ** Mini buffer
@@ -56,7 +73,7 @@ Select theme
  #+BEGIN_SRC emacs-lisp
  (fset 'yes-or-no-p 'y-or-n-p)
  #+END_SRC 
-
+ 
 * History
 #+BEGIN_SRC emacs-lisp 
 
@@ -118,6 +135,10 @@ Once a TODO is done move to =archive.org= (snippet from [[https://github.com/hrs
 
 (define-key org-mode-map (kbd "C-c C-x C-s") 'hrs/mark-done-and-archive)
 (setq org-log-done 'time)
+#+END_SRC
+
+#+BEGIN_SRC emacs-lisp
+
 #+END_SRC
 
 * gnus
